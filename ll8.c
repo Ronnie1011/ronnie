@@ -5,7 +5,7 @@ struct node
 int data;
 struct node* next;
 };
-
+//Creating a node
 struct node* Create_node()
 {
 struct node *n;
@@ -13,7 +13,7 @@ n=(struct node*)malloc(sizeof(struct node));
 n->next=NULL;
 return n;
 }
-
+//Inserting a node
 void insert(struct node **start)
 {
 struct node *t,*p;
@@ -75,7 +75,7 @@ void delete(struct node **start)
     }
 
 }
-
+//View List
 void view(struct node **start)
 {
     struct node *t;
@@ -93,7 +93,7 @@ void view(struct node **start)
         }
     }
 }
-
+//Main Function
 int main()
 {
     struct node *start=NULL;
